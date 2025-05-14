@@ -39,7 +39,8 @@
     "preversion": "npm run lint && npm test",
     "version": "npm run build -- --environment BUILD:release && node compress.mjs && git add .",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook-docs": "storybook dev --docs -p 6007 --config-dir .storybook-docs ",
+    "build-storybook-docs": "storybook build --docs"
   },
   "lint-staged": {
     "js/*.js": [
@@ -64,7 +65,9 @@
     "@storybook/blocks": "^8.6.12",
     "@storybook/html": "^8.6.12",
     "@storybook/html-vite": "^8.6.12",
+    "@storybook/manager-api": "^8.6.12",
     "@storybook/test": "^8.6.12",
+    "@storybook/theming": "^8.6.12",
     "@types/node": "^20.5.2",
     "archiver": "^7.0.1",
     "autoprefixer": "^10.4.21",
