@@ -1,6 +1,6 @@
-import { addons } from '@storybook/manager-api';
-import { themes } from '@storybook/theming';
-import {lightTheme} from './themes.js';
+import { addons } from 'storybook/manager-api';
+import { themes } from 'storybook/theming';
+// import {lightTheme} from './themes.js';
 
 themes.light.brandTitle = 'Materialize Web';
 themes.dark.brandTitle = 'Materialize Web dark';
